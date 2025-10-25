@@ -1,0 +1,48 @@
+# Settings:
+# de.lmu.ifi.dbs.elki.workflow.InputStep
+# -db StaticArrayDatabase
+# 
+# de.lmu.ifi.dbs.elki.database.StaticArrayDatabase
+# -dbc FileBasedDatabaseConnection
+# 
+# de.lmu.ifi.dbs.elki.datasource.FileBasedDatabaseConnection
+# -dbc.in C:\Users\hamed\Desktop\sample.txt
+# -dbc.parser NumberVectorLabelParser
+# 
+# de.lmu.ifi.dbs.elki.datasource.parser.CSVReaderFormat
+# -parser.colsep \s*[,;\s]\s*
+# -parser.quote "'
+# -string.comment ^\s*(#|//|;).*$
+# 
+# de.lmu.ifi.dbs.elki.datasource.parser.NumberVectorLabelParser
+# -parser.labelIndices 0
+# -parser.vector-type DoubleVector
+# 
+# de.lmu.ifi.dbs.elki.datasource.FileBasedDatabaseConnection
+# -dbc.filter transform.ProjectionFilter
+# 
+# de.lmu.ifi.dbs.elki.datasource.filter.transform.ProjectionFilter
+# -projection NumericalFeatureSelection
+# 
+# de.lmu.ifi.dbs.elki.data.projection.NumericalFeatureSelection
+# -projectionfilter.selectedattributes 2,3
+# 
+# de.lmu.ifi.dbs.elki.database.StaticArrayDatabase
+# -db.index [unset]
+# 
+# de.lmu.ifi.dbs.elki.workflow.AlgorithmStep
+# -time true
+# -algorithm clustering.DBSCAN
+# 
+# de.lmu.ifi.dbs.elki.algorithm.clustering.DBSCAN
+# -algorithm.distancefunction geo.LatLngDistanceFunction
+# 
+# de.lmu.ifi.dbs.elki.distance.distancefunction.geo.LatLngDistanceFunction
+# -geo.model SphericalVincentyEarthModel
+# 
+# de.lmu.ifi.dbs.elki.algorithm.clustering.DBSCAN
+# -dbscan.epsilon 5000.0
+# -dbscan.minpts 50
+# 
+# de.lmu.ifi.dbs.elki.workflow.EvaluationStep
+# -evaluator AutomaticEvaluation

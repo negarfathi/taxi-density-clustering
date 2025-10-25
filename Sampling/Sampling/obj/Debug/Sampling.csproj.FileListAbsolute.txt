@@ -1,0 +1,6 @@
+C:\Users\hamed\source\repos\Sampling\Sampling\bin\Debug\Sampling.exe
+C:\Users\hamed\source\repos\Sampling\Sampling\bin\Debug\Sampling.pdb
+C:\Users\hamed\source\repos\Sampling\Sampling\obj\Debug\Sampling.csprojAssemblyReference.cache
+C:\Users\hamed\source\repos\Sampling\Sampling\obj\Debug\Sampling.csproj.CoreCompileInputs.cache
+C:\Users\hamed\source\repos\Sampling\Sampling\obj\Debug\Sampling.exe
+C:\Users\hamed\source\repos\Sampling\Sampling\obj\Debug\Sampling.pdb
